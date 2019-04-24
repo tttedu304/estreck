@@ -169,4 +169,6 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+#Venv Diles
+.venv/
 # End of https://
