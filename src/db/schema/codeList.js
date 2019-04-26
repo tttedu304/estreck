@@ -1,19 +1,26 @@
 // src/db/schema/codeList.js
 const mongoose = require("mongoose");
+const ObjectId = mongoose.Types.ObjectId;
 
 let codeListSchema = new mongoose.Schema({
-    _id: {
-        type: String,
-    },
+    _id: ObjectId,
     name: {
         type: String,
     },
+    description: {
+        type: String,
+        default: "No description provided for this code."
+    },
     content: {
         type: String,
-        default: "No code I can display\n\nOh oh, try with another"
+        default: "No code I can display\n\nOh oh, try with another."
 
+    },
+    date: {
+        type: String,
+        default: "No date provided for this code."
     }
 });
 
-let codes = mongoose.model("Code List", codeListSchema);
-module.exports = codes;
+let Code = mongoose.model("CodeList", codeListSchema);
+module.exports = Code;
