@@ -3,7 +3,10 @@ const mongoose = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId;
 
 let codeListSchema = new mongoose.Schema({
-    _id: ObjectId,
+    _id: {
+        type: ObjectId,
+        default: ObjectId(),
+    },
     name: {
         type: String,
     },

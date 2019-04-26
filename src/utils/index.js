@@ -7,7 +7,7 @@ let today = d.toLocaleDateString();
 
 exports.postCode = async (name, desc, content, date = today) => {
     const newCode = new Code({
-        _id: ObjectId,
+        _id: ObjectId(),
         name: name,
         content: content,
         description: desc,
