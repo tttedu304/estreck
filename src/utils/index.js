@@ -1,29 +1,22 @@
 // src/utils/index.js
-const connect = require("../db/connection");
-const  Code  = require("../db/schema/codeList");
-const  { mongouri }  = require("../../config");
+const Code = require("../db/schema/codeList");
 const mongoose = require("mongoose");
+const ObjectId = mongoose.Types.ObjectId;
+let d = new Date();
+let today = d.toLocaleDateString();
 
-let date = new Date();
+exports.postCode = async (name, desc, content, date = today) => {
+    const newCode = new Code({
+        _id: ObjectId,
+        name: name,
+        content: content,
+        description: desc,
+        date: date
+    });
+    await newCode.save();
+};
 
-module.exports.utils = class {
-    constructor() {
-        this.connection = connect(mongouri);
-        this.time = date.toLocaleDateString()
-    }
-
-    async postCode(name, desc, content, date = this.time) {
-        const newCode = new Code({
-            name: name,
-            content: content,
-            description: desc,
-            date: date
-        });
-        await newCode.save();
-    }
-
-    async removeCode(id) {
-        let deleteCode = await Code.findByIdAndDelete(id);
-        deleteCode.save();
-    }
+exports.removeCode= async(id) => {
+    let deleteCode = await Code.findByIdAndDelete(id);
+    deleteCode.save();
 };
