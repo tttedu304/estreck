@@ -1,0 +1,22 @@
+{
+  "name": "estreck",
+  "version": "1.0.0",
+  "description": "<p align=\"center\"><img align=\"center\" src=\"https://media.discordapp.net/attachments/546760912384688160/570382812960784394/unknown.png?width=1280&height=640\" title=\"estreck logo\"></p>",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tttedu304/estreck.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tttedu304/estreck/issues"
+  },
+  "homepage": "https://github.com/tttedu304/estreck#readme",
+  "dependencies": {
+    "mongoose": "^5.5.4"
+  }
+}
