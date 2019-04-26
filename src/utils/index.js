@@ -1,7 +1,7 @@
 // src/utils/index.js
-const { connect } = require("../db/connection");
-const { Code } = require("../db/schema/codeList");
-const { mongouri } = require("../../config");
+const connect = require("../db/connection");
+const  Code  = require("../db/schema/codeList");
+const  { mongouri }  = require("../../config");
 const mongoose = require("mongoose");
 
 let date = new Date();

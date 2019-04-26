@@ -1,7 +1,7 @@
 // src/index.js
 const mongoose = require("mongoose");
-const { utils } = require("./utils/index");
-const { connect } = require("./db/connection");
+const  utils = require("./utils/index");
+const connect = require("./db/connection");
 const { mongouri } = require("../config");
 
 connect(mongouri);
