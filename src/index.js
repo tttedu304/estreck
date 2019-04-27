@@ -1,5 +1,5 @@
 // src/index.js
-const  { postCode, removeCode} = require("./utils/index");
+const  { postCode, removeCode, fetchCode} = require("./utils/index");
 const { connect } = require("./db/connection");
 const { mongouri } = require("../config");
 

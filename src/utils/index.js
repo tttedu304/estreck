@@ -14,9 +14,16 @@ exports.postCode = async (name, desc, content, date = today) => {
         date: date
     });
     await newCode.save();
+    return console.log(`El codigo, Con nombre ${name} ha sido guardado correctamente, Con ID: ${ObjectId()}, Con la descripcion: ${desc}, Y si contenido es: ${content}`)
 };
 
-exports.removeCode= async(id) => {
+exports.removeCode = async(id) => {
     let deleteCode = await Code.findByIdAndDelete(id);
-    deleteCode.save();
+    await deleteCode.save();
+    return console.log(`El codigo con ID: ${id}, Ha sido borrado exitosamente`)
+};
+
+exports.fetchCode = async(name) => {
+    let fetchedCode = await Code.findOne({ name: name});
+    return console.log(`${fetchedCode.name}\n${fetchedCode.description}\n\n${fetchedCode.content}\n\n\n${fetchedCode.date}\n\n\n\n${fetchedCode._id}`)
 };
