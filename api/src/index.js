@@ -1,4 +1,5 @@
 // src/index.js
+console.log(process.env)
 const { postCode, removeCode, fetchCode, setDistance } = require("./utils/index");
 const { connect } = require("./db/connection");
 const { mongouri } = process.env;
@@ -8,9 +9,9 @@ const path = require("path");
 const levenshtein = require("js-levenshtein");
 const bodyParser = require("body-parser");
 let app = express();
-
+/*
 connect(mongouri);
-
+*/
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", async (req, res) => {
