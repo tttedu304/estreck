@@ -1,7 +1,7 @@
 // src/index.js
 const { postCode, removeCode, fetchCode, setDistance } = require("./utils/index");
 const { connect } = require("./db/connection");
-const { mongouri } = require(process.env);
+const { mongouri } = process.env;
 const Code = require("./db/schema/codeList");
 const express = require("express");
 const path = require("path");
