@@ -75,8 +75,8 @@ app.post("/codes/remove", async (req, res) => {
 });
 
 app.post("/codes/validate", async(req, res) => {
-   const { id, token } = req.body;
-    if (token === process.env.addRemoveToken) {
+   const { id } = req.body;
+    if (req.body.token === process.env.addRemoveToken) {
         await validateCode(id);
         res.redirect("/codes")
     } else {
