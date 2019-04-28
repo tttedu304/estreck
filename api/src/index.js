@@ -7,10 +7,12 @@ const express = require("express");
 const path = require("path");
 const levenshtein = require("js-levenshtein");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 let app = express();
 
 connect(mongouri);
 
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", async (req, res) => {
