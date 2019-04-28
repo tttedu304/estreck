@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId;
 let d = new Date();
 let today = d.toLocaleDateString();
+const levenshtein = require("js-levenshtein");
 
 exports.postCode = async (name, desc, content, date = today) => {
     const newCode = new Code({
@@ -27,3 +28,9 @@ exports.fetchCode = async(name) => {
     let fetchedCode = await Code.findOne({ name: name});
     return console.log(`${fetchedCode.name}\n${fetchedCode.description}\n\n${fetchedCode.content}\n\n\n${fetchedCode.date}\n\n\n\n${fetchedCode._id}`)
 };
+
+exports.setDistance = async(query, records, parameter) =>
+  records.map(record => ({
+    ...record,
+    distance: levenshtein(record[parameter], query)
+}));

@@ -1,5 +1,5 @@
 // src/index.js
-const { postCode, removeCode, fetchCode } = require("./utils/index");
+const { postCode, removeCode, fetchCode, setDistance } = require("./utils/index");
 const { connect } = require("./db/connection");
 const { mongouri } = require("../../config");
 const Code = require("./db/schema/codeList");
@@ -31,21 +31,11 @@ app.get("/codes/:id", async (req, res) => {
 });
 
 app.get("/codes/search/:name", async (req, res) => {
-    const name = req.params.name;
-    const setDistance = (records, query) =>
-      records.map(record => ({
-          ...record,
-          distance: levenshtein(record.name, query)
-      }));
-    const leinshteinedRecords = setDistance(await Code.find({}), name);
-    const searchResults =
-      leinshteinedRecords
-        .filter(record => record.distance <= 3)
-        .sort((a, b) => a.distance - b.distance);
+    const nameP = new RegExp(req.params.name, 'i');
 
-    let codeJson = await searchResults.map(x => x._doc);
-
-    res.json(codeJson)
+    let Codes = await Code.find()
+      .or([{ name: nameP}, { description: nameP}, { content: nameP}]);
+    res.json(Codes)
 });
 
 app.get("/addcode", async (req, res) => {
@@ -73,3 +63,4 @@ app.post("/codes/remove", async (req, res) => {
 app.listen(3000);
 
 console.log(`Started!\n🚀 Ready to fire on port: 3000`);
+
