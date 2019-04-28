@@ -72,5 +72,5 @@ app.post("/codes/remove", async (req, res) => {
 
 app.listen(2000);
 
-console.log(`Started!\n🚀 Ready to fire on port: 3000`);
+console.log(`Started!\n🚀 Ready to fire on port: 2000`);
 
