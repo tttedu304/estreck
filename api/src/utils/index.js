@@ -29,6 +29,12 @@ exports.fetchCode = async(name) => {
     return console.log(`${fetchedCode.name}\n${fetchedCode.description}\n\n${fetchedCode.content}\n\n\n${fetchedCode.date}\n\n\n\n${fetchedCode._id}`)
 };
 
+exports.validateCode = async(id) => {
+    const validate = await Code.findById(id);
+    validate.isValidate = true;
+    Code.save();
+};
+
 exports.setDistance = async(query, records, parameter) =>
   records.map(record => ({
     ...record,
