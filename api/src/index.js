@@ -1,7 +1,7 @@
 // src/index.js
 const { postCode, removeCode, fetchCode, setDistance } = require("./utils/index");
 const { connect } = require("./db/connection");
-const { mongouri } = require("../../config");
+const { mongouri } = require(process.env);
 const Code = require("./db/schema/codeList");
 const express = require("express");
 const path = require("path");
@@ -50,7 +50,7 @@ app.get("/removecode", async (req, res) => {
 
 app.post("/codes/add", async (req, res) => {
     const { name, desc, content, token } = req.body;
-    if (token === "ThisIsASuperSecretTokenForEstreck19052004") {
+    if (token === procces.env.addRemoveToken) {
         await postCode(name, desc, content);
         res.redirect("/codes");
     } else {
@@ -61,7 +61,7 @@ app.post("/codes/add", async (req, res) => {
 
 app.post("/codes/remove", async (req, res) => {
     const { id, token } = req.body;
-    if (token === "ThisIsASuperSecretTokenForEstreck19052004") {
+    if (token === procces.env.addRemoveToken) {
         await removeCode(id);
         res.redirect("/codes");
     } else {
