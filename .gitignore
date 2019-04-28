@@ -172,7 +172,4 @@ typings/
 # Venv files
 .venv/
 
-# env files
- .env
-
 # End of https://
