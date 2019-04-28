@@ -33,10 +33,10 @@ app.get("/codes/:id", async (req, res) => {
 });
 
 app.get("/codes/search/:name", async (req, res) => {
-    const nameP = new RegExp(req.params.name, 'i');
-
+    let nameP = req.params.name;
+    const searchRegex = new RegExp(nameP, "i");
     let Codes = await Code.find()
-        .or([{ name: nameP }, { description: nameP }, { content: nameP }]);
+        .or([{ name: searchRegex }, { description: searchRegex }, { content: searchRegex }]);
     res.json(Codes)
 });
 
