@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", async (req, res) => {
     res.send(
-      'Hello world!\n<ul><li><a href="/codes">Codes</a></li><li><a href="/addcode">Add</a></li><li><a href="/removecode">Remove</a></li></ul>'
+        'Hello world!\n<ul><li><a href="/codes">Codes</a></li><li><a href="/addcode">Add</a></li><li><a href="/removecode">Remove</a></li></ul>'
     );
 });
 
@@ -34,7 +34,7 @@ app.get("/codes/search/:name", async (req, res) => {
     const nameP = new RegExp(req.params.name, 'i');
 
     let Codes = await Code.find()
-      .or([{ name: nameP}, { description: nameP}, { content: nameP}]);
+        .or([{ name: nameP }, { description: nameP }, { content: nameP }]);
     res.json(Codes)
 });
 
@@ -49,15 +49,25 @@ app.get("/removecode", async (req, res) => {
 });
 
 app.post("/codes/add", async (req, res) => {
-    const { name, desc, content } = req.body;
-    await postCode(name, desc, content);
-    res.redirect("/codes");
+    const { name, desc, content, token } = req.body;
+    if (token === "ThisIsASuperSecretTokenForEstreck19052004") {
+        await postCode(name, desc, content);
+        res.redirect("/codes");
+    } else {
+        res.send("Ooh, you missed the token :l")
+        return;
+    }
 });
 
 app.post("/codes/remove", async (req, res) => {
-    const { id } = req.body;
-    await removeCode(id);
-    res.redirect("/codes");
+    const { id, token } = req.body;
+    if (token === "ThisIsASuperSecretTokenForEstreck19052004") {
+        await removeCode(id);
+        res.redirect("/codes");
+    } else {
+        res.send("Ooh, you missed the token :l")
+        return;
+    }
 });
 
 app.listen(2000);
