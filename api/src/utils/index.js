@@ -32,7 +32,7 @@ exports.fetchCode = async(name) => {
 exports.validateCode = async(id) => {
     const validate = await Code.findById(id);
     validate.isValidate = true;
-    Code.save();
+    await validate.save();
 };
 
 exports.setDistance = async(query, records, parameter) =>
