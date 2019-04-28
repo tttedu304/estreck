@@ -50,7 +50,7 @@ app.get("/removecode", async (req, res) => {
 
 app.post("/codes/add", async (req, res) => {
     const { name, desc, content, token } = req.body;
-    if (token === procces.env.addRemoveToken) {
+    if (token === process.env.addRemoveToken) {
         await postCode(name, desc, content);
         res.redirect("/codes");
     } else {
@@ -61,7 +61,7 @@ app.post("/codes/add", async (req, res) => {
 
 app.post("/codes/remove", async (req, res) => {
     const { id, token } = req.body;
-    if (token === procces.env.addRemoveToken) {
+    if (token === process.env.addRemoveToken) {
         await removeCode(id);
         res.redirect("/codes");
     } else {
