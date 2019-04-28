@@ -1,5 +1,5 @@
 // src/index.js
-const { postCode, removeCode, fetchCode, setDistance } = require("./utils/index");
+const { postCode, removeCode, fetchCode, setDistance, validateCode } = require("./utils/index");
 const { connect } = require("./db/connection");
 const mongouri = process.env.mongouri;
 const Code = require("./db/schema/codeList");
@@ -50,15 +50,18 @@ app.get("/removecode", async (req, res) => {
     res.sendFile(pathToFile);
 });
 
+app.get("/validate", async(req, res) => {
+    const pathToFile = await path.join(__dirname, "../../web/validateCode.html");
+    res.sendFile(pathToFile);
+});
+
 app.post("/codes/add", async (req, res) => {
     const { name, desc, content, token } = req.body;
-    if (token === process.env.addRemoveToken) {
-        await postCode(name, desc, content);
-        res.redirect("/codes");
-    } else {
-        res.send("Ooh, you missed the token :l")
-        return;
-    }
+    await postCode(name, desc, content);
+    if(!name) return res.send("You forgot the name");
+    if(!desc) return res.send("You forgot description");
+    if(!desc) return res.send("You forgot the content");
+    res.redirect("/codes");
 });
 
 app.post("/codes/remove", async (req, res) => {
@@ -68,7 +71,16 @@ app.post("/codes/remove", async (req, res) => {
         res.redirect("/codes");
     } else {
         res.send("Ooh, you missed the token :l")
-        return;
+    }
+});
+
+app.post("/codes/validate", async(req, res) => {
+   const { id, token } = req.body;
+    if (token === process.env.addRemoveToken) {
+        await validateCode(id);
+        res.redirect("/codes")
+    } else {
+        res.send("Ooh, you missed the token :l")
     }
 });
 

@@ -22,6 +22,10 @@ let codeListSchema = new mongoose.Schema({
     date: {
         type: String,
         default: "No date provided for this code."
+    },
+    isValidate: {
+        type: Boolean,
+        default: false
     }
 });
 
