@@ -39,8 +39,8 @@ app.get("/codes/:id", async (req, res) => {
 
 app.get("/codes/search/:name", async (req, res) => {
     const searchRegex = new RegExp(req.params.name, "i");
-    let Codes = await Code.find()
-        .or([{ name: searchRegex }, { description: searchRegex }, { content: searchRegex }, { isValidate: true } ]);
+    let Codes = await Code.find({ isValidate: true })
+        .or([{ name: searchRegex }, { description: searchRegex }, { content: searchRegex }]);
     res.json(Codes)
 });
 
