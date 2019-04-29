@@ -45,17 +45,17 @@ app.get("/codes/search/:name", async (req, res) => {
 });
 
 app.get("/addcode", async (req, res) => {
-    const pathToFile = await path.join(__dirname, "../../web/addCode.html");
+    const pathToFile = await path.join(__dirname, "../../web/updates/addCode.html");
     res.sendFile(pathToFile);
 });
 
 app.get("/removecode", async (req, res) => {
-    const pathToFile = await path.join(__dirname, "../../web/removeCode.html");
+    const pathToFile = await path.join(__dirname, "../../web/updates/removeCode.html");
     res.sendFile(pathToFile);
 });
 
 app.get("/validate", async(req, res) => {
-    const pathToFile = await path.join(__dirname, "../../web/validateCode.html");
+    const pathToFile = await path.join(__dirname, "../../web/updates/validateCode.html");
     res.sendFile(pathToFile);
 });
 
