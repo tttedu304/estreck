@@ -17,12 +17,17 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", async (req, res) => {
     res.send(
-        'Hello world!\n<ul><li><a href="/codes">Codes</a></li><li><a href="/addcode">Add</a></li><li><a href="/removecode">Remove</a></li></ul>'
+        'Hello world!\n<ul><li><a href="/codes">Codes</a></li><li><a href="/nocodes">Unvalidated Codes</a></li><li><a href="/addcode">Add</a></li><li><a href="/removecode">Remove</a></li></ul>'
     );
 });
 
 app.get("/codes", async (req, res) => {
     const Codes = await Code.find({ isValidate: true });
+    res.send(Codes);
+});
+
+app.get("/nocodes", async (req, res) => {
+    const Codes = await Code.find({ isValidate: false });
     res.send(Codes);
 });
 
