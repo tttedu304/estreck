@@ -1,0 +1,22 @@
+
+*** These modified files were found in JOE when it aborted on Sun Apr 28 17:56:39 2019
+*** JOE was aborted by UNIX signal 1
+
+*** File '/root/estreck/.git/MERGE_MSG'
+Merge branch 'master' of https://github.com/tttedu304/estreck
+
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+
+*** File '(Unnamed)'
+/root/estreck/.git/MERGE_MSG
+/root/estreck/.git/MERGE_MSG
+
+*** File '* Startup Log *'
+Processing '/etc/joe/editorrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc
