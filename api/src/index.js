@@ -22,13 +22,13 @@ app.get("/", async (req, res) => {
 });
 
 app.get("/codes", async (req, res) => {
-    const Codes = await Code.find({});
+    const Codes = await Code.find({ isValidate: true });
     res.send(Codes);
 });
 
 app.get("/codes/:id", async (req, res) => {
     const id = req.params.id;
-    const code = await Code.find({ _id: id });
+    const code = await Code.find({ _id: id, isValidate: true });
     res.send(code);
 });
 
@@ -36,7 +36,7 @@ app.get("/codes/search/:name", async (req, res) => {
     let nameP = req.params.name;
     const searchRegex = new RegExp(nameP, "i");
     let Codes = await Code.find()
-        .or([{ name: searchRegex }, { description: searchRegex }, { content: searchRegex }]);
+        .or([{ name: searchRegex }, { description: searchRegex }, { content: searchRegex }, { isValidate: true } ]);
     res.json(Codes)
 });
 
