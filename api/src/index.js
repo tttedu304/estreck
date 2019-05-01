@@ -79,10 +79,14 @@ app.post("/codes/remove", async (req, res) => {
 });
 
 app.post("/codes/validate", async(req, res) => {
-   const { id, token } = req.body;
+   const { token } = req.body;
+   let { id } = req.body;
+   id = id.split(" | ");
     if (token === process.env.addRemoveToken) {
-        await validateCode(id);
-        res.redirect("/codes")
+        id.forEach(async() => {
+            await validateCode(id);
+            res.redirect("/codes")
+        });
     } else {
         res.send("Ooh, you missed the token :l")
     }
