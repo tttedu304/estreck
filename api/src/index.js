@@ -85,8 +85,8 @@ app.post("/codes/validate", async(req, res) => {
     if (token === process.env.addRemoveToken) {
         id.forEach(async() => {
             await validateCode(id);
-            res.redirect("/codes")
         });
+        res.redirect("/codes")
     } else {
         res.send("Ooh, you missed the token :l")
     }
