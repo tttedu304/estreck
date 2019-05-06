@@ -17,11 +17,8 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", async (req, res) => {
-    res.send(
-        'Hello world!\n<ul><li><a href="/codes">Codes</a></li><li><a href="/nocodes">Unvalidated Codes</a></li><li><a href="/addcode">Add</a></li><li><a href="/removecode">Remove (Requires token)</a></li><li><a href="/validate">Validate (Requires token)</a></li></ul>'
-    );
     const pathToFile = path.join(__dirname, "../../web/estreck-frontend/public/index.html");
-    console.log(pathToFile)
+    res.sendFile(pathToFile);
 });
 
 app.get("/codes", async (req, res) => {
