@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb9bd817-6af5-49e9-8c72-07ccc7987e8a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +34,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -78,6 +89,7 @@
         <option value="$PROJECT_DIR$/api/src/utils/index.js" />
         <option value="$PROJECT_DIR$/web/validateCode.html" />
         <option value="$PROJECT_DIR$/web/addCode.html" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/api/src/index.js" />
       </list>
     </option>
@@ -100,53 +112,19 @@
         <subPane>
           <expand>
             <path>
-              <item name="Estreck" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Estreck" type="462c0819:PsiDirectoryNode" />
+              <item name="estreck" type="b2602c69:ProjectViewProjectNode" />
+              <item name="estreck" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Estreck" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Estreck" type="462c0819:PsiDirectoryNode" />
+              <item name="estreck" type="b2602c69:ProjectViewProjectNode" />
+              <item name="estreck" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Estreck" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Estreck" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Estreck" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Estreck" type="462c0819:PsiDirectoryNode" />
+              <item name="estreck" type="b2602c69:ProjectViewProjectNode" />
+              <item name="estreck" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Estreck" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Estreck" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="schema" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Estreck" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Estreck" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Estreck" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Estreck" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Estreck" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Estreck" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -166,6 +144,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Edu\Desktop\Estreck\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -274,17 +253,18 @@
       <workItem from="1556667656275" duration="7000" />
       <workItem from="1556670052885" duration="120000" />
       <workItem from="1556670287646" duration="254000" />
+      <workItem from="1557179124755" duration="1297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45232000" />
+    <option name="totallyTimeSpent" value="46529000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
+    <frame x="0" y="-1" width="1600" height="860" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4972973" weight="0.2756654" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4972973" visible="true" weight="0.2752061" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5027027" side_tool="true" weight="0.26285347" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -298,7 +278,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50064266" side_tool="true" weight="0.28097063" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.42272127" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2228261" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32950193" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32950193" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -344,21 +324,9 @@
     <entry file="file://$PROJECT_DIR$/src/root/config.json.js" />
     <entry file="file://$PROJECT_DIR$/src/root/config.json" />
     <entry file="file://$PROJECT_DIR$/src/config.json" />
-    <entry file="file://$PROJECT_DIR$/../lio/database.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-535">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../lio/database.js" />
     <entry file="file://$PROJECT_DIR$/src/db/database.js" />
-    <entry file="file://$PROJECT_DIR$/../lio/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="46" selection-start-line="46" selection-end-line="46" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../lio/server.js" />
     <entry file="file://$PROJECT_DIR$/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -382,13 +350,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.js" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.prettierrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -452,10 +413,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

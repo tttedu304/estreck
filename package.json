@@ -2,8 +2,9 @@
   "name": "estreck",
   "version": "1.0.0",
   "description": "<p align=\"center\"><img align=\"center\" src=\"https://media.discordapp.net/attachments/546760912384688160/570382812960784394/unknown.png?width=1280&height=640\" title=\"estreck logo\"></p>",
-  "main": "src/index.js",
+  "main": "api/src/index.js",
   "scripts": {
+    "start": "api/src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
