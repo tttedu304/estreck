@@ -12,7 +12,7 @@ let app = express();
 
 connect(mongouri);
 
-app.use(express.static('../../web/estreck-frontend/public/'));
+app.use(express.static(path.join(__dirname, '../../web/estreck-frontend/public/')));
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 
