@@ -18,7 +18,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", async (req, res) => {
-    res.send(">h1>Estreck!</h1><ul><li href="/codes">Codes</li><li href="/nocodes">Unvalidated Codes</li><li href="/add">Add</li><li href="/validate">Validate (TOKEN)</li><li href="/remove">Remove (TOKEN)</li></ul>");
+    res.send('<h1>Estreck!</h1><ul><li href="/codes">Codes</li><li href="/nocodes">Unvalidated Codes</li><li href="/add">Add</li><li href="/validate">Validate (TOKEN)</li><li href="/remove">Remove (TOKEN)</li></ul>');
 });
 
 app.get("/codes", async (req, res) => {
