@@ -12,13 +12,13 @@ let app = express();
 
 connect(mongouri);
 
-app.use(express.static(path.join(__dirname, '../../web/estreck-frontend/public')));
-app.use(express.static(path.join(__dirname, '../../web/estreck-frontend/src')));
+app.use(express.static(path.join(__dirname, '../../web/estreck/public')));
+app.use(express.static(path.join(__dirname, '../../web/estreck/src')));
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", async (req, res) => {
-    res.sendFile(path.join(__dirname, '../../web/estreck-frontend/src', 'index.js'))
+    res.sendFile(path.join(__dirname, '../../web/estreck/src', 'index.js'))
 });
 
 app.get("/codes", async (req, res) => {

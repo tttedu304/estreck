@@ -3,11 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="bb9bd817-6af5-49e9-8c72-07ccc7987e8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/estreck-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/estreck-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/estreck-frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/estreck-frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/estreck-frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/src/components/counter.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/src/components/counters.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/src/components/navbar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/estreck-frontend/src/serviceWorker.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +47,35 @@
     <favorites_list name="Estreck" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DEADJOE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,9 +115,9 @@
         <option value="$PROJECT_DIR$/api/src/utils/index.js" />
         <option value="$PROJECT_DIR$/web/validateCode.html" />
         <option value="$PROJECT_DIR$/web/addCode.html" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/api/src/index.js" />
         <option value="$PROJECT_DIR$/web/estreck-frontend/public/index.html" />
+        <option value="$PROJECT_DIR$/api/src/index.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -119,27 +161,6 @@
               <item name="estreck" type="b2602c69:ProjectViewProjectNode" />
               <item name="estreck" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="estreck" type="b2602c69:ProjectViewProjectNode" />
-              <item name="estreck" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="estreck-frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="estreck" type="b2602c69:ProjectViewProjectNode" />
-              <item name="estreck" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="estreck-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="estreck" type="b2602c69:ProjectViewProjectNode" />
-              <item name="estreck" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="estreck-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -269,17 +290,19 @@
       <workItem from="1556670052885" duration="120000" />
       <workItem from="1556670287646" duration="254000" />
       <workItem from="1557179124755" duration="2561000" />
-      <workItem from="1557181710290" duration="370000" />
+      <workItem from="1557181710290" duration="764000" />
+      <workItem from="1557348222598" duration="537000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48163000" />
+    <option name="totallyTimeSpent" value="49094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1600" height="860" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4972973" visible="true" weight="0.2752061" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4972973" visible="true" weight="0.2752061" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5027027" side_tool="true" weight="0.26285347" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -293,7 +316,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50064266" side_tool="true" weight="0.28097063" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.08695652" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.34375" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32950193" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32950193" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -428,20 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/estreck-frontend/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -479,6 +488,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DEADJOE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/estreck/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
         </state>
       </provider>
     </entry>
