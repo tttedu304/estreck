@@ -18,7 +18,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", async (req, res) => {
-    res.sendFile(path.join(__dirname, '../../web/estreck/src', 'index.js'))
+    res.sendFile(path.join(__dirname, '../../web/estreck/public', 'index.html'))
 });
 
 app.get("/codes", async (req, res) => {
