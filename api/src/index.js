@@ -12,13 +12,11 @@ let app = express();
 
 connect(mongouri);
 
-//app.use(express.static(path.join(__dirname, '../../web/estreck/public')));
-//app.use(express.static(path.join(__dirname, '../../web/estreck/src')));
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", async (req, res) => {
-    res.send('<h1>Estreck!</h1><ul><li href="/codes">Codes</li><li href="/nocodes">Unvalidated Codes</li><li href="/add">Add</li><li href="/validate">Validate (TOKEN)</li><li href="/remove">Remove (TOKEN)</li></ul>');
+    res.send('<h1>Estreck!</h1><ul><li><a href="/codes">Codes</a></li><li><a href="/nocodes">Unvalidated Codes</a></li><li><a href="/add">Add</a></li><li><a href="/validate">Validate (TOKEN)</a></li><li><a href="/remove">Remove (TOKEN)</a></li></ul>');
 });
 
 app.get("/codes", async (req, res) => {
