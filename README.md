@@ -5,7 +5,7 @@
 >Estreck is a Base Code Extractor which you can get a base/basic code to use in your application.
 >Estreck is made in JavaScript, using Node.js and Express, and uses the mongoose database to store all the codes, using the Levenshtein algorithm among other search functions we can know exactly what code you are referring to 99.9% of the time.
 
-## **how to use**
+## **How to use**
 
 This API is very simple to use simply send a GET request:
 - `https://estreck.ml/codes` - for all codes
@@ -16,7 +16,7 @@ This API is very simple to use simply send a GET request:
 
 The main objective of Estreck is to optimize the speed in which you code. having at hand common code that you could forget at some point, so Estreck allows you to have everything in one place and with unparalleled speed.
 
-## **Exmaple**
+## **Example**
 
 >Here is a example of how [Estreck](https://estreck.ml/codes) will work, Note: you dont have to use curl or do it by a command line going to the same website will still work.
 >
