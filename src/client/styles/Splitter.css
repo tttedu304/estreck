@@ -1,0 +1,25 @@
+.dividerHitbox {
+    cursor: col-resize;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.divider {
+    height: 100%;
+    width: 10px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.rightPane {
+    flex: 1;
+}
+
+.splitView {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
